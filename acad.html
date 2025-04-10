@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Association - Accueil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            max-width: 1200px;
+        }
+
+        .logo {
+            float: left;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            float: right;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .hero {
+            background: url('association.jpg') center/cover no-repeat;
+            padding: 80px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .hero button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #ffcc00;
+            border: none;
+            color: #333;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #ffaa00;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+            color: #003366;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer-links,
+        .footer-socials {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a,
+        .footer-socials a {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 14px;
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">Association Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Communes membres</a></li>
+                <li><a href="#">Activités/Services</a></li>
+                <li><a href="#">Actualités</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Partenaires</a></li>
+                <li><a href="#">Connexion</a></li>
+                <li><a href="#">Équipes</a></li>
+            </ul>
+        </nav>
+        <div class="clear"></div>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Bienvenue à notre association</h1>
+    <p>Unissons nos forces pour un développement local durable.</p>
+    <button>Découvrez nos services</button>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">Présentation de l’Association</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="photo-association.jpg" alt="Association" style="width:100%; border-radius: 8px;">
+                <p><strong>Nom :</strong> Association des Communes Unies</p>
+                <p><strong>Acronyme :</strong> ACU</p>
+                <p><strong>Slogan :</strong> Ensemble pour le développement</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">Communes Membres</h2>
+        <div class="grid">
+            <div class="card">Commune 1</div>
+            <div class="card">Commune 2</div>
+            <div class="card">Commune 3</div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">Équipes Dirigeantes</h2>
+        <div class="grid">
+            <div class="card">Président : M. X</div>
+            <div class="card">Secrétaire : Mme Y</div>
+            <div class="card">Trésorier : M. Z</div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">Actualités & Évènements</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Forum des Maires 2025</h3>
+                <p>Date : 15 juin 2025</p>
+                <p>Lieu : Hôtel de ville de X</p>
+            </div>
+            <div class="card">
+                <h3>Campagne de reboisement</h3>
+                <p>Date : 22 avril 2025</p>
+                <p>Lieu : Forêt communale Y</p>
+            </div>
+            <div class="card">
+                <h3>Conférence sur la décentralisation</h3>
+                <p>Date : 10 mars 2025</p>
+                <p>Lieu : Centre culturel Z</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container">
+        <h2 class="section-title">Activités & Projets</h2>
+        <div class="grid">
+            <div class="card">Projet A</div>
+            <div class="card">Activité B</div>
+            <div class="card">Projet C</div>
+        </div>
+        <a class="btn" href="#">Voir nos partenaires</a>
+        <a class="btn" href="#">Contactez-nous</a>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="#">Accueil</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">FAQ</a>
+            <a href="#">Politique d’utilisation</a>
+        </div>
+        <div class="footer-socials">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">YouTube</a>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Association des Communes Unies. Tous droits réservés.
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

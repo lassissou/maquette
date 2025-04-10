@@ -1,0 +1,186 @@
+/* Reset et police */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* === HEADER === */
+header {
+    background: linear-gradient(135deg, #0055a5, #0099cc);
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* === SECTIONS === */
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #0055a5;
+    margin-bottom: 2rem;
+}
+
+.bouton-principal {
+    display: inline-block;
+    background-color: #0055a5;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin: 1rem auto;
+    display: block;
+    text-align: center;
+}
+
+.bouton-principal:hover {
+    background-color: #003f7d;
+}
+
+/* === IMAGES HOVER === */
+.image-hover-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-hover-container img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-hover-container:hover img {
+    transform: scale(1.05);
+}
+
+.image-hover-container::after {
+    content: "Découvrez nos services";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 85, 165, 0.8);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.image-hover-container:hover::after {
+    transform: translateY(0%);
+}
+
+/* === CARDS === */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 2rem;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* === FOOTER === */
+footer {
+    background-color: #003f7d;
+    color: white;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+footer .colonnes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+footer .colonne {
+    flex: 1 1 200px;
+}
+
+footer .colonne h3 {
+    margin-bottom: 1rem;
+}
+
+footer .colonne a {
+    display: block;
+    text-decoration: none;
+    color: #eee;
+    margin: 0.5rem 0;
+}
+
+footer .colonne a:hover {
+    color: #ffcc00;
+}
+
+footer .copyright {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .colonnes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
