@@ -3,280 +3,545 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Association - Accueil</title>
-    <link href="index.css" rel="stylesheet">
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #003366;
-            color: white;
-            padding: 20px 0;
-        }
-
-        .container {
-            width: 90%;
-            margin: auto;
-            max-width: 1200px;
-        }
-
-        .logo {
-            float: left;
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        nav {
-            float: right;
-        }
-
-        nav ul {
-            list-style: none;
-        }
-
-        nav ul li {
-            display: inline-block;
-            margin-left: 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #ffcc00;
-        }
-
-        .clear {
-            clear: both;
-        }
-
-        .hero {
-            background: url('association.jpg') center/cover no-repeat;
-            padding: 80px 0;
-            color: white;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-        }
-
-        .hero button {
-            margin-top: 20px;
-            padding: 12px 25px;
-            font-size: 16px;
-            background-color: #ffcc00;
-            border: none;
-            color: #333;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .hero button:hover {
-            background-color: #ffaa00;
-        }
-
-        section {
-            padding: 60px 0;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
-            color: #003366;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            padding: 20px;
-            transition: transform 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #003366;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        footer {
-            background-color: #003366;
-            color: white;
-            padding: 40px 0;
-        }
-
-        .footer-links,
-        .footer-socials {
-            margin-bottom: 20px;
-        }
-
-        .footer-links a,
-        .footer-socials a {
-            color: white;
-            text-decoration: none;
-            display: inline-block;
-            margin-right: 15px;
-        }
-
-        .footer-bottom {
-            text-align: center;
-            font-size: 14px;
-            border-top: 1px solid #ccc;
-            padding-top: 15px;
-        }
-    </style>
+    <title>Association Communale</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <div class="logo">Association Logo</div>
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Communes membres</a></li>
-                <li><a href="#">Activités/Services</a></li>
-                <li><a href="#">Actualités</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Partenaires</a></li>
-                <li><a href="#">Connexion</a></li>
-                <li><a href="#">Équipes</a></li>
-            </ul>
-        </nav>
-        <div class="clear"></div>
-    </div>
-</header>
-
-<section class="hero">
-    <h1>Bienvenue à notre association</h1>
-    <p>Unissons nos forces pour un développement local durable.</p>
-    <button>Découvrez nos services</button>
-</section>
-
-<section>
-    <div class="container">
-        <h2 class="section-title">Présentation de l’Association</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="photo-association.jpg" alt="Association" style="width:100%; border-radius: 8px;">
-                <p><strong>Nom :</strong> Association des Communes Unies</p>
-                <p><strong>Acronyme :</strong> ACU</p>
-                <p><strong>Slogan :</strong> Ensemble pour le développement</p>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Logo de l'association" name="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Communes</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Actualités</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Historique</a></li>
+                    <li><a href="#">Partenaires</a></li>
+                    <li><a href="#">Connexion</a></li>
+                    <li><a href="#">Dirigeantes</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="search" placeholder="Rechercher...">
+                <button type="submit"><i class="fas fa-search"></i> Rechercher</button>
             </div>
         </div>
-    </div>
-</section>
+    </header>
 
-<section>
-    <div class="container">
-        <h2 class="section-title">Communes Membres</h2>
-        <div class="grid">
-            <div class="card">Commune 1</div>
-            <div class="card">Commune 2</div>
-            <div class="card">Commune 3</div>
-        </div>
-    </div>
-</section>
-
-<section>
-    <div class="container">
-        <h2 class="section-title">Équipes Dirigeantes</h2>
-        <div class="grid">
-            <div class="card">Président : M. X</div>
-            <div class="card">Secrétaire : Mme Y</div>
-            <div class="card">Trésorier : M. Z</div>
-        </div>
-    </div>
-</section>
-
-<section>
-    <div class="container">
-        <h2 class="section-title">Actualités & Évènements</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Forum des Maires 2025</h3>
-                <p>Date : 15 juin 2025</p>
-                <p>Lieu : Hôtel de ville de X</p>
+    <main>
+        <section class="banner">
+            <div class="slider">
+                <div class="slide">
+                    <img src="images/slide1.jpg" alt="Image de l'association" name="slide1">
+                    <div class="slide-content">
+                        <h2>Association Fleurissante</h2>
+                        <p class="acronyme">AFC</p>
+                        <p class="slogan">Ensemble, cultivons l'avenir de nos communautés.</p>
+                        <a href="#" class="btn">Découvrez nos services</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/slide2.avif" alt="Image de l'association" name="slide2">
+                    <div class="slide-content">
+                        <h2>Association Fleurissante</h2>
+                        <p class="acronyme">AFC</p>
+                        <p class="slogan">Unissons nos forces pour un développement durable.</p>
+                        <a href="#" class="btn">Découvrez nos services</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/slide3.avif" alt="Image de l'association" name="slide3">
+                    <div class="slide-content">
+                        <h2>Association Fleurissante</h2>
+                        <p class="acronyme">AFC</p>
+                        <p class="slogan">Agissons aujourd'hui pour un demain meilleur.</p>
+                        <a href="#" class="btn">Découvrez nos services</a>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <h3>Campagne de reboisement</h3>
-                <p>Date : 22 avril 2025</p>
-                <p>Lieu : Forêt communale Y</p>
+        </section>
+
+        <section class="multimedia">
+            <div class="container">
+                <h2 class="section-title">Multimédia</h2>
+                <div class="media-container">
+                    <div class="media-item">
+                        <img src="images/ph1.jpg" alt="Photo 1" name="ph1">
+                    </div>
+                    <div class="media-item">
+                        <img src="images/ph2.avif" alt="Photo 2" name="ph2">
+                    </div>
+                    <div class="media-item">
+                        <img src="images/ph3.avif" alt="Photo 3" name="ph3">
+                    </div>
+                    <div class="media-item">
+                        <img src="images/ph4.avif" alt="Photo 4" name="ph4">
+                    </div>
+                    <div class="media-item">
+                        <img src="images/ph5.avif" alt="Photo 5" name="ph5">
+                    </div>
+                    <div class="media-item">
+                        <video src="videos/vid1.mp4" controls name="vid1"></video>
+                    </div>
+                    <div class="media-item">
+                        <video src="videos/vid2.mp4" controls name="vid2"></video>
+                    </div>
+                    <div class="media-item">
+                        <video src="videos/vid3.mp4" controls name="vid3"></video>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <h3>Conférence sur la décentralisation</h3>
-                <p>Date : 10 mars 2025</p>
-                <p>Lieu : Centre culturel Z</p>
+        </section>
+
+        <section class="communes">
+            <div class="container">
+                <h2 class="section-title">Nos Communes Membres</h2>
+                <div class="commune-grid">
+                    <div class="commune-card">
+                        <div class="commune-img">
+                            <img src="images/pc1.jpg" alt="Commune A" name="pc1">
+                        </div>
+                        <div class="commune-info">
+                            <h3>BelleVille</h3>
+                            <p>Une charmante commune rurale, riche en histoire et en traditions locales.</p>
+                            <a href="#" class="btn btn-secondary">Voir plus de détails</a>
+                        </div>
+                    </div>
+                    <div class="commune-card">
+                        <div class="commune-img">
+                            <img src="images/pc1.jpg" alt="Commune B" name="pc2">
+                        </div>
+                        <div class="commune-info">
+                            <h3>Grandbourg</h3>
+                            <p>Centre économique dynamique, connu pour son artisanat et ses marchés animés.</p>
+                            <a href="#" class="btn btn-secondary">Voir plus de détails</a>
+                        </div>
+                    </div>
+                    <div class="commune-card">
+                        <div class="commune-img">
+                            <img src="images/pc2.jpg" alt="Commune C" name="pc3">
+                        </div>
+                        <div class="commune-info">
+                            <h3>Valfleury</h3>
+                            <p>Située au cœur d'une vallée verdoyante, idéale pour les amoureux de la nature et de la randonnée.</p>
+                            <a href="#" class="btn btn-secondary">Voir plus de détails</a>
+                        </div>
+                    </div>
+                    <div class="commune-card">
+                        <div class="commune-img">
+                            <img src="images/pc3.jpg" alt="Commune D" name="pc4">
+                        </div>
+                        <div class="commune-info">
+                            <h3>Port-Libre</h3>
+                            <p>Ville côtière pittoresque, réputée pour ses plages magnifiques et son port de pêche.</p>
+                            <a href="#" class="btn btn-secondary">Voir plus de détails</a>
+                        </div>
+                    </div>
+                    <div class="commune-card">
+                        <div class="commune-img">
+                            <img src="images/pc5.jpg" alt="Commune E" name="pc5">
+                        </div>
+                        <div class="commune-info">
+                            <h3>Montagneville</h3>
+                            <p>Niché dans les montagnes, offrant des paysages à couper le souffle et des activités de plein air.</p>
+                            <a href="#" class="btn btn-secondary">Voir plus de détails</a>
+                        </div>
+                    </div>
+                    <div class="commune-card">
+                        <div class="commune-img">
+                            <img src="images/pc5.jpg" alt="Commune F" name="pc6">
+                        </div>
+                        <div class="commune-info">
+                            <h3>Plaine Horizon</h3>
+                            <p>Vaste étendue agricole, connue pour ses cultures et son ambiance paisible.</p>
+                            <a href="#" class="btn btn-secondary">Voir plus de détails</a>
+                        </div>
+                    </div>
+                    </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
+        <section class="dirigeants">
+            <div class="container">
+                <h2 class="section-title">Nos Équipes Dirigeantes</h2>
+                <div class="dirigeant-grid">
+                    <div class="dirigeant-card">
+                        <div class="dirigeant-img">
+                            <img src="images/téléchargement (1).jpg" alt="Dirigeant 1" name="pd1">
+                        </div>
+                        <div class="dirigeant-info">
+                            <h3>Jean Dubois</h3>
+                            <p>Président</p>
+                            <p>Responsable de la vision stratégique de l'association.</p>
+                        </div>
+                    </div>
+                    <div class="dirigeant-card">
+                        <div class="dirigeant-img">
+                            <img src="images/téléchargement (3).jpg" alt="Dirigeant 2" name="pd2">
+                        </div>
+                        <div class="dirigeant-info">
+                            <h3>Sophie Martin</h3>
+                            <p>Secrétaire</p>
+                            <p>Assure la gestion administrative et la communication interne.</p>
+                        </div>
+                    </div>
+                    <div class="dirigeant-card">
+                        <div class="dirigeant-img">
+                            <img src="images/téléchargement (4).jpg" alt="Dirigeant 3" name="pd3">
+                        </div>
+                        <div class="dirigeant-info">
+                            <h3>Pierre Lefevre</h3>
+                            <p>Trésorier</p>
+                            <p>Responsable des finances et de la comptabilité de l'association.</p>
+                        </div>
+                    </div>
+                    <div class="dirigeant-card">
+                        <div class="dirigeant-img">
+                            <img src="images/téléchargement (5).jpg" alt="Dirigeant 4" name="pd4">
+                        </div>
+                        <div class="dirigeant-info">
+                            <h3>Amélie Garcia</h3>
+                            <p>Coordinatrice des Projets</p>
+                            <p>Supervise la mise en œuvre des différentes initiatives.</p>
+                        </div>
+                    </div>
+                    <div class="dirigeant-card">
+                        <div class="dirigeant-img">
+                            <img src="images/téléchargement.jpg" alt="Dirigeant 5" name="pd5">
+                        </div>
+                        <div class="dirigeant-info">
+                            <h3>Luc Thomas</h3>
+                            <p>Responsable de la Communication</p>
+                            <p>Gère les relations publiques et la diffusion d'informations.</p>
+                        </div>
+                    </div>
+                    <div class="dirigeant-card">
+                        <div class="dirigeant-img">
+                            <img src="images/pd9.jpg" alt="Dirigeant 6" name="pd6">
+                        </div>
+                        <div class="dirigeant-info">
+                            <h3>Chloé Bernard</h3>
+                            <p>Chargée des Partenariats</p>
+                            <p>Développe et entretient les relations avec nos partenaires.</p>
+                        </div>
+                    </div>
+                    <div class="dirigeant-card">
+                        <div class="dirigeant-img">
+                            <img src="images/pd7.jpg" alt="Dirigeant 7" name="pd7">
+                        </div>
+                        <div class="dirigeant-info">
+                            <h3>Antoine Roux</h3>
+                            <p>Membre du Conseil</p>
+                            <p>Apporte son expertise et participe aux décisions importantes.</p>
+                        </div>
+                    </div>
+                    <div class="dirigeant-card">
+                        <div class="dirigeant-img">
+                            <img src="images/pd8.jpg" alt="Dirigeant 8" name="pd8">
+                        </div>
+                        <div class="dirigeant-info">
+                            <h3>Léa Fournier</h3>
+                            <p>Membre du Conseil</p>
+                            <p>Contribue activement aux orientations de l'association.</p>
+                        </div>
+                    </div>
+                    <div class="dirigeant-card">
+                        <div class="dirigeant-img">
+                            <img src="images/pd9.jpg" alt="Dirigeant 9" name="pd9">
+                        </div>
+                        <div class="dirigeant-info">
+                            <h3>Gabriel Moreau</h3>
+                            <p>Conseiller Spécial</p>
+                            <p>Fournit des conseils stratégiques et son réseau professionnel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section>
-    <div class="container">
-        <h2 class="section-title">Activités & Projets</h2>
-        <div class="grid">
-            <div class="card">Projet A</div>
-            <div class="card">Activité B</div>
-            <div class="card">Projet C</div>
-        </div>
-        <a class="btn" href="#">Voir nos partenaires</a>
-        <a class="btn" href="#">Contactez-nous</a>
-    </div>
-</section>
+        <section class="actualites">
+            <div class="container">
+                <h2 class="section-title">Actualités et Évènements</h2>
+                <div class="actu-container">
+                    <div class="actu-card">
+                        <div class="actu-media">
+                            <img src="images/ima1.avif" alt="Actualité 1" name="ima1">
+                        </div>
+                        <div class="actu-content">
+                            <h3>Grande Collecte de Fonds pour l'Éducation</h3>
+                            <span class="actu-date">15 Avril 2025</span>
+                            <p class="actu-text">Rejoignez-nous pour notre grande collecte de fonds annuelle visant à soutenir l'éducation des enfants dans nos communes membres. Au programme : activités ludiques, vente aux enchères et témoignages inspirants...</p>
+                            <a href="#" class="btn btn-secondary">Lire la suite</a>
+                        </div>
+                    </div>
+                    <div class="actu-card">
+                        <div class="actu-media">
+                            <video src="videos/vid1_actu.mp4" controls name="vid1_actu"></video>
+                        </div>
+                        <div class="actu-content">
+                            <h3>Retour en Images sur l'Atelier Communautaire</h3>
+                            <span class="actu-date">05 Avril 2025</span>
+                            <p class="actu-text">Revivez les moments forts de notre dernier atelier communautaire dédié à l'artisanat local. Découvrez les créations magnifiques et les échanges enrichissants entre les participants...</p>
+                            <a href="#" class="btn btn-secondary">Voir la vidéo</a>
+                        </div>
+                    </div>
+                    <div class="actu-card">
+                        <div class="actu-content">
+                            <h3>Prochain Conseil d'Administration : Ordre du Jour</h3>
+                            <span class="actu-date">22 Avril 2025</span>
+                            <p class="actu-text">Le prochain conseil d'administration se tiendra le 22 avril. Les points clés à l'ordre du jour incluent la validation du rapport annuel, la discussion des nouveaux projets et l'élection des nouveaux membres du bureau...</p>
+                            <a href="#" class="btn btn-secondary">Plus d'informations</a>
+                        </div>
+                    </div>
+                    <div class="actu-card">
+                        <div class="actu-media">
+                            <img src="images/ima2.avif" alt="Actualité 2" name="ima2">
+                        </div>
+                        <div class="actu-content">
+                            <h3>Lancement d'un Nouveau Programme de Soutien aux Familles</h3>
+                            <span class="actu-date">01 Mai 2025</span>
+                            <p class="actu-text">Nous sommes heureux d'annoncer le lancement de notre nouveau programme de soutien aux familles en difficulté. Ce programme offrira une aide financière, un accompagnement social et des ateliers de formation...</p>
+                            <a href="#" class="btn btn-secondary">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="actu-card">
+                        <div class="actu-content">
+                            <h3>Invitation à l'Assemblée Générale Annuelle</h3>
+                            <span class="actu-date">10 Mai 2025</span>
+                            <p class="actu-text">Nous vous invitons à participer à notre Assemblée Générale annuelle, un moment important pour faire le bilan de nos actions passées et discuter des orientations futures de notre association. Votre présence est essentielle...</p>
+                            <a href="#" class="btn btn-secondary">Participer</a>
+                        </div>
+                    </div>
+                    <div class="actu-card">
+                        <div class="actu-media">
+                            <video src="videos/vid2_actu.mp4" controls name="vid2_actu"></video>
+                        </div>
+                        <div class="actu-content">
+                            <h3>Interview de notre Président sur les Défis Locaux</h3>
+                            <span class="actu-date">28 Mars 2025</span>
+                            <p class="actu-text">Retrouvez l'interview de notre président, Jean Dubois, où il aborde les principaux défis rencontrés par nos communes et les solutions proposées par notre association pour y faire face...</p>
+                            <a href="#" class="btn btn-secondary">Regarder l'interview</a>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </section>
 
-<footer>
-    <div class="container">
-        <div class="footer-links">
-            <a href="#">Accueil</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-            <a href="#">FAQ</a>
-            <a href="#">Politique d’utilisation</a>
-        </div>
-        <div class="footer-socials">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">YouTube</a>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2025 Association des Communes Unies. Tous droits réservés.
-        </div>
-    </div>
-</footer>
-
-</body>
-</html>
+        <section class="projets">
+            <div class="container">
+                <h2 class="section-title">Nos Activités et Projets</h2>
+                <div class="projet-grid">
+                    <div class="projet-card">
+                        <div class="projet-img">
+                            <img src="images/pp1.jpg" alt="Projet 1" name="pp1">
+                        </div>
+                        <div class="projet-info">
+                            <h3>Soutien à l'Agriculture Durable</h3>
+                            <pCe projet vise à accompagner les agriculteurs locaux dans la transition vers des pratiques agricoles plus respectueuses de l'environnement et à promouvoir les circuits courts.</p>
+                                <a href="#" class="btn btn-secondary">Voir plus de détails</a>
+                            </div>
+                        </div>
+                        <div class="projet-card">
+                            <div class="projet-img">
+                                <img src="images/pp2.jpg" alt="Projet 2" name="pp2">
+                            </div>
+                            <div class="projet-info">
+                                <h3>Amélioration des Infrastructures Éducatives</h3>
+                                <p>Nous travaillons à la rénovation et à l'équipement des écoles primaires de nos communes pour offrir un environnement d'apprentissage optimal aux enfants.</p>
+                                <a href="#" class="btn btn-secondary">Voir plus de détails</a>
+                            </div>
+                        </div>
+                        <div class="projet-card">
+                            <div class="projet-img">
+                                <img src="images/pp3.jpg" alt="Projet 3" name="pp3">
+                            </div>
+                            <div class="projet-info">
+                                <h3>Initiatives pour l'Emploi des Jeunes</h3>
+                                <p>Ce programme propose des formations professionnelles et un accompagnement à la recherche d'emploi pour favoriser l'insertion des jeunes dans le monde du travail.</p>
+                                <a href="#" class="btn btn-secondary">Voir plus de détails</a>
+                            </div>
+                        </div>
+                        <div class="projet-card">
+                            <div class="projet-img">
+                                <img src="images/pp4.jpg" alt="Projet 4" name="pp4">
+                            </div>
+                            <div class="projet-info">
+                                <h3>Préservation du Patrimoine Local</h3>
+                                <p>Nous nous engageons dans la sauvegarde et la valorisation du patrimoine culturel et historique de nos communes pour les générations futures.</p>
+                                <a href="#" class="btn btn-secondary">Voir plus de détails</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="partenaires">
+                <div class="container">
+                    <h2 class="section-title">Nos Partenaires</h2>
+                    <div class="partenaire-grid">
+                        <div class="partenaire-card">
+                            <div class="partenaire-img">
+                                <img src="images/ppa1.jpg" alt="Partenaire 1" name="ppa1">
+                            </div>
+                            <div class="partenaire-info">
+                                <h3>Entreprise Alpha</h3>
+                                <p>Soutien financier et logistique pour nos événements.</p>
+                                <a href="#" class="btn btn-secondary">Voir plus</a>
+                            </div>
+                        </div>
+                        <div class="partenaire-card">
+                            <div class="partenaire-img">
+                                <img src="images/ppa2.jpg" alt="Partenaire 2" name="ppa2">
+                            </div>
+                            <div class="partenaire-info">
+                                <h3>Fondation Beta</h3>
+                                <p>Partenaire clé dans nos projets éducatifs et sociaux.</p>
+                                <a href="#" class="btn btn-secondary">Voir plus</a>
+                            </div>
+                        </div>
+                        <div class="partenaire-card">
+                            <div class="partenaire-img">
+                                <img src="images/ppa3.jpg" alt="Partenaire 3" name="ppa3">
+                            </div>
+                            <div class="partenaire-info">
+                                <h3>Association Gamma</h3>
+                                <p>Collaboration sur des initiatives de développement durable.</p>
+                                <a href="#" class="btn btn-secondary">Voir plus</a>
+                            </div>
+                        </div>
+                        <div class="partenaire-card">
+                            <div class="partenaire-img">
+                                <img src="images/ppa4.jpg" alt="Partenaire 4" name="ppa4">
+                            </div>
+                            <div class="partenaire-info">
+                                <h3>Ville Delta</h3>
+                                <p>Support institutionnel et mise à disposition d'infrastructures.</p>
+                                <a href="#" class="btn btn-secondary">Voir plus</a>
+                            </div>
+                        </div>
+                        <div class="partenaire-card">
+                            <div class="partenaire-img">
+                                <img src="images/ppa5.jpg" alt="Partenaire 5" name="ppa5">
+                            </div>
+                            <div class="partenaire-info">
+                                <h3>Banque Epsilon</h3>
+                                <p>Sponsor de nos programmes de formation et d'insertion.</p>
+                                <a href="#" class="btn btn-secondary">Voir plus</a>
+                            </div>
+                        </div>
+                        <div class="partenaire-card">
+                            <div class="partenaire-img">
+                                <img src="images/ppa6.jpg" alt="Partenaire 6" name="ppa6">
+                            </div>
+                            <div class="partenaire-info">
+                                <h3>Média Zeta</h3>
+                                <p>Partenaire de communication pour la promotion de nos actions.</p>
+                                <a href="#" class="btn btn-secondary">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary">Voir tous nos partenaires</a>
+                        <a href="#" class="btn btn-success">Contactez-nous</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+        <footer>
+            <div class="container footer-container">
+                <div class="footer-col">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Communes Membres</a></li>
+                        <li><a href="#">Activités/Services</a></li>
+                        <li><a href="#">Actualités/Évènements</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Partenaires</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Réseaux Sociaux</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Partenaires</h3>
+                    <ul>
+                        <li><a href="#">Entreprise Alpha</a></li>
+                        <li><a href="#">Fondation Beta</a></li>
+                        <li><a href="#">Association Gamma</a></li>
+                        <li><a href="#">Ville Delta</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Informations Légales</h3>
+                    <ul>
+                        <li><a href="#">Politique d'utilisation</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container copyright">
+                <p>&copy; 2025 Association Espoir Communal. Tous droits réservés.</p>
+            </div>
+        </footer>
+    
+        <script>
+            const slides = document.querySelectorAll('.slide');
+            let currentIndex = 0;
+            const intervalTime = 3000; // Temps en millisecondes entre chaque slide
+            let intervalId;
+            let direction = 1; // 1 pour avant, -1 pour arrière
+    
+            function showSlide(index) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                slides[index].classList.add('active');
+            }
+    
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                showSlide(currentIndex);
+            }
+    
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                showSlide(currentIndex);
+            }
+    
+            function startSlider() {
+                intervalId = setInterval(() => {
+                    if (direction === 1) {
+                        nextSlide();
+                        if (currentIndex === slides.length - 1) {
+                            direction = -1; // Inverser la direction à la fin
+                        }
+                    } else {
+                        prevSlide();
+                        if (currentIndex === 0) {
+                            direction = 1; // Inverser la direction au début
+                        }
+                    }
+                }, intervalTime);
+            }
+    
+            // Démarrer le slider au chargement de la page
+            startSlider();
+        </script>
+    
+    </body>
+    </html>
